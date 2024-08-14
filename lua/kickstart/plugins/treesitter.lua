@@ -18,7 +18,7 @@ return {
     config = function(_, opts)
       -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
 
-      require("nvim-treesitter.install").compilers = { "zig", "gcc", "g++", "clang", "cl" }
+      require("nvim-treesitter.install").compilers = { "gcc", "zig", "g++", "clang", "cl" }
       ---@diagnostic disable-next-line: missing-fields
       require('nvim-treesitter.configs').setup(opts)
 
