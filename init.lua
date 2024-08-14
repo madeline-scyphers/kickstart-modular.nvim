@@ -105,5 +105,12 @@ require 'lazy-bootstrap'
 -- [[ Configure and install plugins ]]
 require 'lazy-plugins'
 
+
+vim.filetype.add({
+  extension = {
+    nf = 'groovy',
+  },
+})
+vim.treesitter.language.register('groovy', 'nf')
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
